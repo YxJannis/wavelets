@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <p>Wavelet Families</p>
+        <a href="#" onclick="to_wavelet('haar')">Haar</a>
+        <a href="#" class="collapsible" onclick="collapse('db')">Daubechies</a>
+        <div class="undernav" id="nav_db">
+            <a href="#" onclick="to_wavelet('db2')">db2</a>
+            <a href="#" onclick="to_wavelet('db3')">db3</a>
+            <a href="#" onclick="to_wavelet('db4')">db4</a>
+            <a href="#" onclick="to_wavelet('db5')">db5</a>
+            <a href="#" onclick="to_wavelet('db6')">db6</a>
+            <a href="#" onclick="to_wavelet('db12')">db12</a>
+            <a href="#" onclick="to_wavelet('db16')">db16</a>
+            <a href="#" onclick="to_wavelet('db20')">db20</a>
+            <a href="#" onclick="to_wavelet('db30')">db30</a>
+            <a href="#" onclick="to_wavelet('db38')">db38</a>
+        </div>
+        <a href="#" onclick="to_wavelet('dmey')" >Discrete Meyer</a>
+        <a href="#" class="collapsible" onclick="collapse('bior')">Biorthogonal</a>
+        <div class="undernav" id="nav_bior">
+            <a href="#" onclick="to_wavelet('bior1.1')">bior1.1</a>
+            <a href="#" onclick="to_wavelet('bior1.5')">bior1.5</a>
+            <a href="#" onclick="to_wavelet('bior2.2')">bior2.2</a>
+            <a href="#" onclick="to_wavelet('bior2.8')">bior2.8</a>
+            <a href="#" onclick="to_wavelet('bior3.1')">bior3.1</a>
+            <a href="#" onclick="to_wavelet('bior3.9')">bior3.9</a>
+            <a href="#" onclick="to_wavelet('bior4.4')">bior4.4</a>
+            <a href="#" onclick="to_wavelet('bior6.8')">bior6.8</a>
+        </div>
+        <a href="#" class="collapsible" onclick="collapse('coif')">Coiflets</a>
+        <div class="undernav" id="nav_coif">
+            <a href="#" onclick="to_wavelet('coif1')">coif1</a>
+            <a href="#" onclick="to_wavelet('coif2')">coif2</a>
+            <a href="#" onclick="to_wavelet('coif10')">coif10</a>
+            <a href="#" onclick="to_wavelet('coif16')">coif16</a>
+        </div>
+        <a href="#" class="collapsible" onclick="collapse('sym')">Symlets</a>
+        <div class="undernav" id="nav_sym">
+            <a href="#" onclick="to_wavelet('sym2')">sym2</a>
+            <a href="#" onclick="to_wavelet('sym3')">sym3</a>
+            <a href="#" onclick="to_wavelet('sym4')">sym4</a>
+            <a href="#" onclick="to_wavelet('sym5')">sym5</a>
+            <a href="#" onclick="to_wavelet('sym6')">sym6</a>
+            <a href="#" onclick="to_wavelet('sym12')">sym12</a>
+            <a href="#" onclick="to_wavelet('sym16')">sym16</a>
+            <a href="#" onclick="to_wavelet('sym20')">sym20</a>
+        </div>
+        <hr>
+        <a href="#" onclick="to_wavelet('errors')">Error analysis</a>
+    </div>
+    
+    <!-- Page content -->
+    <div class="main" id="main">
+        Initial text
+    </div>
+
+    <div class="wavelet-family" id="haar">
+        <div class="column">
+            <img src="plot_images/haar/Promenade1_haar_1.png">
+            <img src="plot_images/haar/Promenade1_haar_2.png">
+            <img src="plot_images/haar/Promenade1_haar_3.png">
+            <img src="plot_images/haar/Promenade1_haar_4.png">
+            <img src="plot_images/haar/Promenade1_haar_5.png">
+            <img src="plot_images/haar/Promenade1_haar_6.png">
+            <img src="plot_images/haar/Promenade1_haar_7.png">
+            <img src="plot_images/haar/Promenade1_haar_8.png">
+            <img src="plot_images/haar/Promenade1_haar_9.png">
+            <img src="plot_images/haar/Promenade1_haar_10.png">
+            <img src="plot_images/haar/Promenade1_haar_11.png">
+            <img src="plot_images/haar/Promenade1_haar_12.png">
+            <img src="plot_images/haar/Promenade1_haar_13.png">
+            <img src="plot_images/haar/Promenade1_haar_14.png">
+            <img src="plot_images/haar/Promenade1_haar_15.png">
+            <img src="plot_images/haar/Promenade1_haar_16.png">
+        </div>
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+
+
+    <div class="wavelet-family" id="sym">
+        <div class="column">
+            <img src="plot_images/sym/Promenade1_sym2_1.png">
+        </div>
+    </div>
+
+    <div class="wavelet-family" id="errors">
+        <div class="column">
+            <div class="plot_desc">
+                <h4>Haar Wavelet</h4>
+                <img src="plot_images/error_analysis/error_analysis_haar_rel.png">
+            </div>
+            <div class="plot_desc">
+                <h4>Daubechies2 Wavelet</h4>
+                <img src="plot_images/error_analysis/error_analysis_db2_rel.png">
+            </div>
+            <div class="plot_desc">
+                <h4>Discrete Meyer Wavelet</h4>
+            <img src="plot_images/error_analysis/error_analysis_dmey_rel.png">
+            </div>
+            <div class="plot_desc">
+                <h4>Coiflet1 Wavelet</h4>
+            <img src="plot_images/error_analysis/error_analysis_coif1_rel.png">
+            </div>
+            <div class="plot_desc">
+                <h4>Symlet 2 Wavelet</h4>
+            <img src="plot_images/error_analysis/error_analysis_sym2_rel.png">
+            </div>
+        </div>
+    </div>
+</body>
