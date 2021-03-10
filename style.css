@@ -3,7 +3,6 @@ hr {
 
 }
 
-
 img {
     border-bottom: 1px solid rgb(27, 27, 27);
     display: inline-block;
@@ -53,7 +52,7 @@ img {
     font-size: 20px;
     /*color: #818181;*/
     display: block;
-    }
+}
   
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -62,11 +61,16 @@ color: black;
 
 /* Style page content */
 .main {
-margin-left: 160px; /* Same as the width of the sidebar */
-padding: 0px 10px;
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
 }
 
 .wavelet-family {
+    display: none;
+}
+
+.compare{
+    text-align: center;
     display: none;
 }
 

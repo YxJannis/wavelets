@@ -55,10 +55,29 @@
         </div>
         <hr>
         <a href="#" onclick="to_wavelet('errors')">Error analysis</a>
+        <hr>
+        <a href='#' onclick="init_compare()">Compare</a>
+        <hr>
     </div>
     
     <!-- Page content -->
     <div class="main" id="main">
+    </div>
+
+    <div class="compare" id="compare">
+        <div class="column" id ="compare_column">
+            <h2> Compare two wavelet plots</h2>
+            <p>Enter wavelets to be compared (i.e. db3, haar, sym4) and embed bit (1-16):</p>
+            <span>Add Wavelet: <input size="3" type="text" id="wavelet1" name="wavelet1"> 
+                Embed Bit: <input size="2" type="text" id="embedbit1" name="embedbit1"></span>
+                <p></p>
+            <button onclick="compare()">Add Plot</button> <button onclick="init_compare()">Remove All</button>
+            <div class="plot_desc">
+                
+            </div>
+
+            <div id="empty_div"></div>
+        </div>
     </div>
 
     <div class="wavelet-family" id="errors">

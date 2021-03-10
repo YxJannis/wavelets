@@ -26,7 +26,6 @@ function to_wavelet(wavelet){
         create_plot_divs(wavelet_type, wavelet);
     }
     var waveletdiv = document.getElementById(wavelet);
-    //waveletdiv.style.display = "unset";
     maindiv.innerHTML = waveletdiv.innerHTML;
 }
 
@@ -63,6 +62,48 @@ function create_plot_divs(wavelet, key){
 
     document.body.insertBefore(newDiv, errorDiv);
     
+}
+
+function init_compare(){
+    var maindiv = document.getElementById("main");
+    var comparediv = document.getElementById("compare");
+    maindiv.innerHTML = comparediv.innerHTML;
+
+}
+
+function compare(){
+    var wav1 = document.getElementById("wavelet1").value;
+    var embit1 = document.getElementById("embedbit1").value;
+    show_plot(wav1, embit1);
+}
+
+
+function show_plot(wavelet, embit){
+    var plot_img = document.createElement("img");
+    var type_string = wavelet.substring(0,2);
+    var wavelet_type = "";
+    switch(type_string){
+        case "ha":
+            wavelet_type = "haar";
+            break;
+        case "db":
+            wavelet_type = "db";
+            break;
+        case "dm":
+            wavelet_type = "dmey";
+            break;
+        case "bi":
+            wavelet_type = "bior";
+            break;
+        case "co":
+            wavelet_type = "coif";
+            break;
+        case "sy":
+            wavelet_type = "sym";
+            break;
+    }
+    plot_img.src = "plot_images/" + wavelet_type + "/Promenade1_" + wavelet + "_" + embit + ".png";
+    document.getElementById("compare_column").insertBefore(plot_img, document.getElementById("empty_div"));
 }
 
 function create_all_for_key(wavelet){
