@@ -12,6 +12,10 @@ img {
     text-align: center;
 }
 
+.compare {
+    display: none;
+}
+
 
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -69,10 +73,6 @@ color: black;
     display: none;
 }
 
-.compare {
-    text-align: center;
-    display: none;
-}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
