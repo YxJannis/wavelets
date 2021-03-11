@@ -6,6 +6,8 @@ hr {
 img {
     border-bottom: 1px solid rgb(27, 27, 27);
     display: inline-block;
+    max-width: 100%;
+    height: auto;
 }
 
 .plot_desc{
