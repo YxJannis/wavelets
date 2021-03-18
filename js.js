@@ -29,6 +29,12 @@ function to_wavelet(wavelet){
     maindiv.innerHTML = waveletdiv.innerHTML;
 }
 
+function to_audio_compare(){
+    var maindiv = document.getElementById("main");
+    var audiodiv = document.getElementById("audio_echo_hiding");
+    maindiv.innerHTML = audiodiv.innerHTML;
+}
+
 function collapse(wavelet){
     var text = "nav_" + wavelet;
     var undernav = document.getElementById(text);

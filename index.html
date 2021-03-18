@@ -57,6 +57,8 @@
         <hr>
         <a href='#' onclick="init_compare()">Compare</a>
         <hr>
+        <a href='#' onclick="to_audio_compare()">Echo Hiding in Wavelet Domain</a>
+        <hr>
     </div>
     
     <!-- Page content -->
@@ -97,6 +99,32 @@
                 <h4>Symlet 2 Wavelet</h4>
             <img src="plot_images/error_analysis/error_analysis_sym2_rel.png">
             </div>
+        </div>
+    </div>
+
+    <div class="audio_echo_hiding" id="audio_echo_hiding">
+        <div class="column">
+            Original audio without embedding:<br>
+            <audio controls>
+            <source src="audio_files/SaChenPromenade1.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio><br><hr>
+            Audio embedded with echo hiding in level 1 detail coefficients:<br>
+            <audio controls>
+                <source src="audio_files/out_dwt_level_1_echo.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio><br><hr>
+            Audio embedded with echo hiding in level 2 detail coefficients:<br>
+            <audio controls>
+                <source src="audio_files/out_dwt_level_2_echo.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio><br><hr>
+            Audio embedded with echo hiding in level 3 detail coefficients:<br>
+            <audio controls>
+                <source src="audio_files/out_dwt_level_3_echo.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio><br><hr>
+            Additional files (key, message) can be found <a href="audio_files/">here</a>.
         </div>
     </div>
 </body>

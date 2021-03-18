@@ -14,7 +14,7 @@ img {
     text-align: center;
 }
 
-.compare {
+.compare, .audio_echo_hiding {
     display: none;
 }
 
