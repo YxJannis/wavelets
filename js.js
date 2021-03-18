@@ -155,6 +155,5 @@ function create_all_for_key(wavelet){
         create_plot_divs('sym', 'sym6');
         create_plot_divs('sym', 'sym12');
         create_plot_divs('sym', 'sym16');
-        create_plot_divs('sym', 'sym20');
     }
 }
